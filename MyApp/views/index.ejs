@@ -1,0 +1,17 @@
+<%- include('head.ejs') %>
+
+    <% data.forEach(dag => { %>
+      <a href="/date/<%= dag.date %>">test</a>
+      <article>
+        <%if (dag.mediaType == "video") { %>
+          <iframe src="<%= dag.url %>" alt="">
+        <% } else{ %>
+          <img src="<%= dag.url %>">
+        <% } %>
+        <p><%= dag.title %></p>
+        <!-- <a href="/detail">detailpagina</a> -->
+        <br><br><br><br><br><br><br><br>
+      </article>
+    <% }) %>
+  </body>
+</html>
