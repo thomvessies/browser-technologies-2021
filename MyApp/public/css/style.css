@@ -1,3 +1,11 @@
 html {
-    background: rgb(86, 86, 255);
+    background: rgb(200, 230, 205);
+    text-align: center;
+}
+
+form {
+    background: rgb(200, 250, 210);
+    display: inline-block;
+    border: black;
+    width: 60%;
 }

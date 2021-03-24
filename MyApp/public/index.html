@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Enquête</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="/js/script.js"></script>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header> 
+            <h1>Enquête</h1>
+        </header>
+
+        <article>
+            <form>
+                <h2>Studentgegevens:</h2>
+                <label for="naam">Naam:</label>
+                <input type="text" id="naam" name="naam" required>
+
+                <label for="stdnr">Studentnummer:</label>
+                <input type="text" id="stdnr" name="stdnr" required><br><br><br>
+
+                <nav>
+                    <h2>Kies een vak om feedback te geven:</h2>
+                    <p>Linkjes naar vak1, vak2, vak3, ....</p>
+                </nav>
+
+                <br><br>
+                <h2>Kies je docent:</h2>
+                <label for="docent1">docent1:</label>
+                <input type="radio" id="docent1" name="docent"><br>
+                <label for="docent2">docent2:</label>
+                <input type="radio" id="docent2" name="docent"><br>
+                <label for="docent3">docent3:</label>
+                <input type="radio" id="docent3" name="docent"><br>
+                <label for="docent4">docent4:</label>
+                <input type="radio" id="docent4" name="docent"><br>
+                <label for="docent5">docent5:</label>
+                <input type="radio" id="docent5" name="docent"><br>
+                <label for="docent6">docent6:</label>
+                <input type="radio" id="docent6" name="docent"><br><br>
+
+                <h2>Hoe vond je het vak?</h2>
+                <p>1 is slecht, 10 is goed.</p>
+                <label for="mening1">1:</label>
+                <input type="radio" id="mening1" name="mening">
+                <label for="mening6">6:</label>
+                <input type="radio" id="mening6" name="mening"><br>
+                <label for="mening2">2:</label>
+                <input type="radio" id="mening2" name="mening">
+                <label for="mening7">7:</label>
+                <input type="radio" id="mening7" name="mening"><br>
+                <label for="mening3">3:</label>
+                <input type="radio" id="mening3" name="mening">
+                <label for="mening8">8:</label>
+                <input type="radio" id="mening8" name="mening"><br>
+                <label for="mening4">4:</label>
+                <input type="radio" id="mening4" name="mening">
+                <label for="mening9">9:</label>
+                <input type="radio" id="mening9" name="mening"><br>
+                <label for="mening5">5:</label>
+                <input type="radio" id="mening5" name="mening">
+                <label for="mening10">10:</label>
+                <input type="radio" id="mening10" name="mening"><br>
+                <br>
+                <!-- <input type="range" id="vak" name="vak" min="1" max="10"> -->
+
+                <h2>Hoe moeilijk was de lesstof?</h2>
+                <p>1 is slecht, 10 is goed.</p>
+                <label for="moeilijk1">1:</label>
+                <input type="radio" id="moeilijk" name="moeilijk">
+                <label for="moeilijk6">6:</label>
+                <input type="radio" id="moeilijk6" name="moeilijk"><br>
+                <label for="moeilijk2">2:</label>
+                <input type="radio" id="moeilijk2" name="moeilijk">
+                <label for="moeilijk7">7:</label>
+                <input type="radio" id="moeilijk7" name="moeilijk"><br>
+                <label for="moeilijk3">3:</label>
+                <input type="radio" id="moeilijk3" name="moeilijk">
+                <label for="moeilijk8">8:</label>
+                <input type="radio" id="moeilijk8" name="moeilijk"><br>
+                <label for="moeilijk4">4:</label>
+                <input type="radio" id="moeilijk4" name="moeilijk">
+                <label for="moeilijk9">9:</label>
+                <input type="radio" id="moeilijk9" name="moeilijk"><br>
+                <label for="moeilijk5">5:</label>
+                <input type="radio" id="moeilijk5" name="moeilijk">
+                <label for="moeilijk10">10:</label>
+                <input type="radio" id="moeilijk10" name="moeilijk"><br>
+                <br>
+                <!-- <input type="range" id="lesstof" name="lesstof" min="1" max="10"> -->
+
+                <h2>Hoe goed was de uitleg?</h2>
+                <p>1 is slecht, 10 is goed.</p>
+                <label for="uitleg1">1:</label>
+                <input type="radio" id="uitleg1" name="uitleg">
+                <label for="uitleg6">6:</label>
+                <input type="radio" id="uitleg6" name="uitleg"><br>
+                <label for="uitleg2">2:</label>
+                <input type="radio" id="uitleg2" name="uitleg">
+                <label for="uitleg7">7:</label>
+                <input type="radio" id="uitleg7" name="uitleg"><br>
+                <label for="uitleg3">3:</label>
+                <input type="radio" id="uitleg3" name="uitleg">
+                <label for="uitleg8">8:</label>
+                <input type="radio" id="uitleg8" name="uitleg"><br>
+                <label for="uitleg4">4:</label>
+                <input type="radio" id="uitleg4" name="uitleg">
+                <label for="uitleg9">9:</label>
+                <input type="radio" id="uitleg9" name="uitleg"><br>
+                <label for="uitleg5">5:</label>
+                <input type="radio" id="uitleg5" name="uitleg">
+                <label for="uitleg10">10:</label>
+                <input type="radio" id="uitleg10" name="uitleg"><br>
+                <br>
+                <!-- <input type="range" id="lesstof" name="lesstof" min="1" max="10"> -->
+
+                <h2>Heb je nog op of aanmerkingen over dit vak?</h2>
+                <input type="text" id="feedback" name="feedback"><br><br><br>
+
+                <br><br><br>
+                <input type="submit" value="Submit">
+
+            </form>
+        </article>
+
+        
+
+
+
+    </body>
+</html>
