@@ -5,16 +5,16 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="/js/script.js"></script>
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="../public/css/style.css" />
     </head>
     <body>
         <header> 
-            <h1>Enquête</h1>
+            <h1>Enquête WAFS</h1>
         </header>
 
         <article>
-            <form>
+            <form id="formulier">
+                <input type="button" id="invulButton" value="invullen"></button>
                 <h2>Studentgegevens:</h2>
                 <label for="naam">Naam:</label>
                 <input type="text" id="naam" name="naam" required>
@@ -24,13 +24,17 @@
 
                 <nav>
                     <h2>Kies een vak om feedback te geven:</h2>
-                    <p>Linkjes naar vak1, vak2, vak3, ....</p>
+                    <a href="index.html">index</a>
+                    <a href="BT.html">BT</a>
+                    <a href="WAFS.html">WAFS</a>
+                    <a href="CSSTTR.html">CSSTTR</a>
+
                 </nav>
 
                 <br><br>
                 <h2>Kies je docent:</h2>
                 <label for="docent1">docent1:</label>
-                <input type="radio" id="docent1" name="docent"><br>
+                <input type="radio" id="docent1" name="docent" value="docent1"><br>
                 <label for="docent2">docent2:</label>
                 <input type="radio" id="docent2" name="docent"><br>
                 <label for="docent3">docent3:</label>
@@ -121,14 +125,10 @@
                 <input type="text" id="feedback" name="feedback"><br><br><br>
 
                 <br><br><br>
-                <input type="submit" value="Submit">
+                <input type="button" id="formButton" value="Submit">
 
             </form>
         </article>
-
-        
-
-
-
+        <script defer src="../public/js/script.js"></script>
     </body>
 </html>

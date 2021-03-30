@@ -13,7 +13,12 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.get('/', function (req, res) {
-  
+    res.render('index')
+});
+
+app.get('/vak/WAFS', function (req, res) {
+    const vakNaam = "WAFS"
+    res.render('index', { vakNaam:vakNaam })
 });
 
 app.listen(port, () => console.log(`App is running on port ${port}`));
