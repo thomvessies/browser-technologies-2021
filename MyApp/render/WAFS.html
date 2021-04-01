@@ -13,8 +13,7 @@
         </header>
 
         <article>
-            <form id="formulier">
-                <input type="button" id="invulButton" value="invullen"></button>
+            <form id="WAFS">
                 <h2>Studentgegevens:</h2>
                 <label for="naam">Naam:</label>
                 <input type="text" id="naam" name="naam" required>
@@ -22,16 +21,14 @@
                 <label for="stdnr">Studentnummer:</label>
                 <input type="text" id="stdnr" name="stdnr" required><br><br><br>
 
-                <nav>
-                    <h2>Kies een vak om feedback te geven:</h2>
-                    <a href="index.html">index</a>
-                    <a href="BT.html">BT</a>
-                    <a href="WAFS.html">WAFS</a>
-                    <a href="CSSTTR.html">CSSTTR</a>
+                <h2>Wat waren de eerste en laatste week vak het vak?</h2>
+                <label for="startweek">Startweek:</label>
+                <input type="text" id="startweek" name="startweek" required>
 
-                </nav>
+                <label for="eindweek">Eindweek:</label>
+                <input type="text" id="eindweek" name="eindweek" required>
 
-                <br><br>
+                <br><br><br>
                 <h2>Kies je docent:</h2>
                 <label for="docent1">docent1:</label>
                 <input type="radio" id="docent1" name="docent" value="docent1"><br>
@@ -74,7 +71,7 @@
                 <h2>Hoe moeilijk was de lesstof?</h2>
                 <p>1 is slecht, 10 is goed.</p>
                 <label for="moeilijk1">1:</label>
-                <input type="radio" id="moeilijk" name="moeilijk">
+                <input type="radio" id="moeilijk1" name="moeilijk" required>
                 <label for="moeilijk6">6:</label>
                 <input type="radio" id="moeilijk6" name="moeilijk"><br>
                 <label for="moeilijk2">2:</label>
@@ -122,11 +119,10 @@
                 <!-- <input type="range" id="lesstof" name="lesstof" min="1" max="10"> -->
 
                 <h2>Heb je nog op of aanmerkingen over dit vak?</h2>
-                <input type="text" id="feedback" name="feedback"><br><br><br>
+                <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
 
                 <br><br><br>
-                <input type="button" id="formButton" value="Submit">
-
+                <a href="navigatie.html"><input type="button" id="formButton" value="Submit"></a>
             </form>
         </article>
         <script defer src="../public/js/script.js"></script>

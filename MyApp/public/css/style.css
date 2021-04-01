@@ -9,3 +9,8 @@ form {
     border: black;
     width: 60%;
 }
+
+#feedback{
+    width: 70%;
+    height: 200px;
+}
