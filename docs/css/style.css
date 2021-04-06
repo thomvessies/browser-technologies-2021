@@ -43,6 +43,7 @@ form {
     display: none;
 }
 .radiobutton > label {
+    justify-content: center;
     position: relative;
     color: black;
     border: 2px solid black;
