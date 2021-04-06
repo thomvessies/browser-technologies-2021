@@ -13,6 +13,30 @@ else if (document.getElementById('BT')){
     formNaam = 'BT'
 }
 
+document.getElementById('radiobuttonContainer').style.display = 'none';
+document.getElementById('slideContainer').style.display = 'inline-block';
+
+var meningSlider = document.getElementById('meningSlider');
+var meningOutput = document.getElementById('meningValue');
+meningOutput.innerHTML = meningSlider.value;
+meningSlider.oninput = function(){
+    meningOutput.innerHTML = this.value;
+}
+
+var moeilijkSlider = document.getElementById('moeilijkSlider');
+var moeilijkOutput = document.getElementById('moeilijkValue');
+moeilijkOutput.innerHTML = moeilijkSlider.value;
+moeilijkSlider.oninput = function(){
+    moeilijkOutput.innerHTML = this.value;
+}
+
+var uitlegSlider = document.getElementById('uitlegSlider');
+var uitlegOutput = document.getElementById('uitlegValue');
+uitlegOutput.innerHTML = uitlegSlider.value;
+uitlegSlider.oninput = function(){
+    uitlegOutput.innerHTML = this.value;
+}
+
 retrieveStudentGegevens(formNaam)
 
 if (document.getElementById('studentButton')){
@@ -25,13 +49,14 @@ if (document.getElementById('formButton')){
     formButton.addEventListener('click', e => storeFormGegevens(e, formNaam))
 }
 
-function storeStudentGegevens(e){
+function storeStudentGegevens(e, formNaam){
     // console.log(e)
     // localStorage.clear()
     var nameValue = document.querySelector('#naam').value
     localStorage.setItem('naam', nameValue)
     var stdnrValue = document.querySelector('#stdnr').value
     localStorage.setItem('stdnr', stdnrValue)
+    document.getElementById(formNaam).action = "navigatie.html";
 }
 
 function storeFormGegevens(e){
@@ -82,11 +107,11 @@ function retrieveStudentGegevens(formNaam){
 function retrieveFormGegevens(formNaam){
     formJSON = localStorage.getItem(formNaam)
     formData = JSON.parse(formJSON)
-    
-    document.getElementById('startweek').value = formData.startweek
-    document.getElementById('eindweek').value = formData.eindweek
-
-
+    console.log(formData.eindweek)
+    if (document.getElementById('startweek')){
+        document.getElementById('startweek').value = formData.startweek
+        document.getElementById('eindweek').value = formData.eindweek
+    }
     document.getElementsByName('docent')
         .forEach(radio => {
             if (radio.id == formData.docent){
@@ -111,8 +136,10 @@ function retrieveFormGegevens(formNaam){
                 radio.checked = true
             }
         })
-    
-    
+    console.log(formData)
+    var feedbackValue = formData.feedback
+    console.log(feedbackValue)
+    document.querySelector('#feedback').value = feedbackValue
 }
 
 retrieveFormGegevens(formNaam)

@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="../public/css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <header> 
@@ -29,10 +29,12 @@
                 <input type="text" id="eindweek" name="eindweek" required>
 
                 <br><br><br>
-                <h2>Kies je docent:</h2>
                 <div class="radiobutton">
+                    <h2>Kies je docent:</h2>
                     <input type="radio" id="docent1" name="docent" value="Susanne ten Voorde" required>
+                    <label for="docent1">Susanne ten Voorde</label>
                     <input type="radio" id="docent2" name="docent" value="Joost Faber">
+                    <label for="docent2">Joost Faber</label>
                 </div>
                 <br><br>
 
@@ -112,17 +114,21 @@
                     <br>
                 </div>
                 <div id="slideContainer">
-                    <input type="range" min="1" max="10" id="meningSlider" class="slider">
+                    <h2>Hoe vond je het vak?</h2>
+                    <p>1 is slecht, 10 is goed.</p>
+                    <input type="range" min="1" max="10" id="meningSlider" class="slider" required>
                     <p>Value: <span id="meningValue"></span></p>
 
-                    <input type="range" min="1" max="10" id="moeilijkSlider" class="slider">
+                    <h2>Hoe moeilijk was de lesstof?</h2>
+                    <p>1 is slecht, 10 is goed.</p>
+                    <input type="range" min="1" max="10" id="moeilijkSlider" class="slider" required>
                     <p>Value: <span id="moeilijkValue"></span></p>
 
-                    <input type="range" min="1" max="10" id="uitlegSlider" class="slider">
+                    <h2>Hoe goed was de uitleg?</h2>
+                    <p>1 is slecht, 10 is goed.</p>
+                    <input type="range" min="1" max="10" id="uitlegSlider" class="slider" required>
                     <p>Value: <span id="uitlegValue"></span></p>
                 </div>
-                
-                <!-- <input type="range" id="lesstof" name="lesstof" min="1" max="10"> -->
 
                 <h2>Heb je nog op of aanmerkingen over dit vak?</h2>
                 <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
@@ -131,6 +137,6 @@
                 <input type="submit" id="formButton" value="Submit">
             </form>
         </article>
-        <script defer src="../public/js/script.js"></script>
+        <script defer src="./js/script.js"></script>
     </body>
 </html>

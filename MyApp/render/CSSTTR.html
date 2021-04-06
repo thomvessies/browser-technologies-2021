@@ -13,7 +13,7 @@
         </header>
 
         <article>
-            <form id="CSSTTR">
+            <form action="navigatie.html" id="CSSTTR">
                 <h2>Studentgegevens:</h2>
                 <label for="naam">Naam:</label>
                 <input type="text" id="naam" name="naam" required>
@@ -31,22 +31,14 @@
                 <br><br><br>
                 <h2>Kies je docent:</h2>
                 <label for="docent1">docent1:</label>
-                <input type="radio" id="docent1" name="docent"><br>
+                <input type="radio" id="docent1" name="docent" value="Vasilis van Gemert" required><br>
                 <label for="docent2">docent2:</label>
-                <input type="radio" id="docent2" name="docent"><br>
-                <label for="docent3">docent3:</label>
-                <input type="radio" id="docent3" name="docent"><br>
-                <label for="docent4">docent4:</label>
-                <input type="radio" id="docent4" name="docent"><br>
-                <label for="docent5">docent5:</label>
-                <input type="radio" id="docent5" name="docent"><br>
-                <label for="docent6">docent6:</label>
-                <input type="radio" id="docent6" name="docent"><br><br>
+                <input type="radio" id="docent2" name="docent" value="Sannt t Hooft"><br><br>
 
                 <h2>Hoe vond je het vak?</h2>
                 <p>1 is slecht, 10 is goed.</p>
                 <label for="mening1">1:</label>
-                <input type="radio" id="mening1" name="mening">
+                <input type="radio" id="mening1" name="mening" required>
                 <label for="mening6">6:</label>
                 <input type="radio" id="mening6" name="mening"><br>
                 <label for="mening2">2:</label>
@@ -71,7 +63,7 @@
                 <h2>Hoe moeilijk was de lesstof?</h2>
                 <p>1 is slecht, 10 is goed.</p>
                 <label for="moeilijk1">1:</label>
-                <input type="radio" id="moeilijk1" name="moeilijk">
+                <input type="radio" id="moeilijk1" name="moeilijk" required>
                 <label for="moeilijk6">6:</label>
                 <input type="radio" id="moeilijk6" name="moeilijk"><br>
                 <label for="moeilijk2">2:</label>
@@ -96,7 +88,7 @@
                 <h2>Hoe goed was de uitleg?</h2>
                 <p>1 is slecht, 10 is goed.</p>
                 <label for="uitleg1">1:</label>
-                <input type="radio" id="uitleg1" name="uitleg">
+                <input type="radio" id="uitleg1" name="uitleg" required>
                 <label for="uitleg6">6:</label>
                 <input type="radio" id="uitleg6" name="uitleg"><br>
                 <label for="uitleg2">2:</label>
@@ -122,7 +114,7 @@
                 <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
 
                 <br><br><br>
-                <a href="navigatie.html"><input type="button" id="formButton" value="Submit"></a>
+                <input type="submit" id="formButton" value="Submit">
 
             </form>
         </article>

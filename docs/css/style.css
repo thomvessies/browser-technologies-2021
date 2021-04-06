@@ -3,7 +3,7 @@ html {
 }
 body {
     background: linear-gradient( 90deg,
-        rgba(0, 0, 0, .5) 50%, rgba(255,255,255, .4) 50%);
+        rgba(0, 0, 0, .3) 50%, rgba(255,255,255, .4) 50%);
     background-size: 7em 7em;
     background-color: rgb(180, 250, 180);
 }
@@ -28,18 +28,37 @@ h1 {
 }
 
 p {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     opacity: 0.7;
 }
 
 form {
     background: rgb(200, 250, 210);
     display: inline-block;
-    border: black;
+    border: 3px solid black;
     width: 62%;
 }
 
-#feedback{
+.radiobutton > input[type="radio"] {
+    display: none;
+}
+.radiobutton > label {
+    position: relative;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    margin: 3px;
+    align-items: center;
+}
+
+.radiobutton input[type="radio"]:checked + label{
+    background-color: rgb(140, 255, 140);
+    font-weight: bold;
+}
+
+#feedback {
     width: 70%;
     height: 200px;
 }
@@ -49,13 +68,13 @@ form {
     display: none;
 }
 
-.slider{
+.slider {
     -webkit-appearance: none;
     width: 100%;
     height: 20px;
-    background: yellow;
+    background: rgb(140, 255, 140);
     outline: none;
-    opacity: 0.7;
+    opacity: 1;
     -webkit-transition: 0.2s;
     transition: opacity 0.2s;
     border-radius: 12px;
