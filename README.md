@@ -6,7 +6,7 @@ Live demo: https://thomvessies.github.io/browser-technologies-2021/
 ## Concept
 Voor dit vak heb ik voor de web-ênquete opdracht gekozen. Hierbij moet de gebruiker een enquête invullen over de vakken van de minor. De gebruiker moet onder iedere omstandigheid de enquête kunnen invullen. Ook als javascript en css niet beschikbaar zijn voor de gebruiker.
 
-### Concept foto's
+### Concept foto's/wireframe
 ![alt text](https://github.com/thomvessies/browser-technologies-2021/blob/master/img/1.jpeg)
 ![alt text](https://github.com/thomvessies/browser-technologies-2021/blob/master/img/2.jpeg)
 ![alt text](https://github.com/thomvessies/browser-technologies-2021/blob/master/img/3.jpeg)
@@ -22,6 +22,9 @@ Google Chrome (windows), Microsoft Edge (windows), Safari (iOS), Google Chrome (
 ### functional
 Er wordt een formulier weergegeven met de invulvelden van de enquête. De gebruiker kan deze enquêtes 1 voor 1 invullen.
 
+### usable
+Het formulier ziet er duidelijker uit en de gebruiker wordt beter meegenomen door het programma..
+
 ### pleasurable
-De opgegeven informatie wordt in de localStorage opgeslagen, zodat de gebruiker eventueel later de enquête kan afmaken.
+De opgegeven informatie wordt in de localStorage opgeslagen, zodat de gebruiker eventueel later de enquête kan afmaken. Ook is de UX verbeterd door radiobuttons te vervangen voor sliders.
 
