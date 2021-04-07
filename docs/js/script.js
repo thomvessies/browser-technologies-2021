@@ -113,6 +113,7 @@ function retrieveFormGegevens(formNaam){
     document.querySelector('#feedback').value = feedbackValue
 }
 if (formNaam == 'nee'){
+    console.log('check')
     document.getElementById('linkLijstVol').style.display = 'none'
     document.getElementById('linkBTvol').style.display = 'none'
     document.getElementById('linkWAFSvol').style.display = 'none'
@@ -137,7 +138,7 @@ if (formNaam == 'nee'){
     if (Object.keys(localStorage).includes('BT') && Object.keys(localStorage).includes('WAFS') && Object.keys(localStorage).includes('CSSTTR')){
         document.getElementById('linkLijstLeeg').style.display = 'none'
     }
-} else if (formNaam = 'index'){
+} else if (formNaam == 'index'){
     console.log(formNaam)
 }
 else {
