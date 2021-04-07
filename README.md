@@ -21,6 +21,7 @@ Google Chrome (windows), Microsoft Edge (windows), Safari (iOS), Google Chrome (
 
 ### functional
 Er wordt een formulier weergegeven met de invulvelden van de enquête. De gebruiker kan deze enquêtes 1 voor 1 invullen.
+![alt text](https://github.com/thomvessies/browser-technologies-2021/blob/master/img/functionable.PNG)
 
 ### usable
 Het formulier ziet er duidelijker uit en de gebruiker wordt beter meegenomen door het programma..
