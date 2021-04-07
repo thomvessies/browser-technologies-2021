@@ -59,7 +59,7 @@ function storeStudentGegevens(e, formNaam){
     document.getElementById(formNaam).action = "navigatie.html";
 }
 
-function storeFormGegevens(e){
+function storeFormGegevens(e, formNaam){
     var nameValue = document.querySelector('#naam').value
     localStorage.setItem('naam', nameValue)
     var stdnrValue = document.querySelector('#stdnr').value
