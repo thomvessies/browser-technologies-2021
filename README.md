@@ -1,7 +1,7 @@
 # Readme Browser Technologies
 
 ## Demo
-Live demo: https://thomvessies.github.io/browser-technologies-2021/
+Live demo: https://thomvessies.github.io/browser-technologies-2021/docs/
 
 ## Concept
 Voor dit vak heb ik voor de web-ênquete opdracht gekozen. Hierbij moet de gebruiker een enquête invullen over de vakken van de minor. De gebruiker moet onder iedere omstandigheid de enquête kunnen invullen. Ook als javascript en css niet beschikbaar zijn voor de gebruiker.
